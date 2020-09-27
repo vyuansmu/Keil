@@ -1,0 +1,30 @@
+Dependencies for Project 'statemachine', Target 'Target 1': (DO NOT MODIFY !)
+F (.\startup_stm32f10x_cl.s)(0x5AF48303)(--cpu Cortex-M3 --pd "__RTX SETA 1" --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x--list .\startup_stm32f10x_cl.lst --xref -o .\startup_stm32f10x_cl.o --depend .\startup_stm32f10x_cl.d)
+F (.\system_stm32f10x_cl.c)(0x5AF48302)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-o .\system_stm32f10x_cl.o --omf_browse .\system_stm32f10x_cl.crf --depend .\system_stm32f10x_cl.d)
+I (C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x_cl.h)(0x532CAA2A)
+I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x532CAE92)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C87C24)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x532CAE92)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x532CAE92)
+I (C:\Keil\ARM\Inc\ST\STM32F10x\system_stm32f10x_cl.h)(0x532CAA2A)
+F (.\GLCD_SPI_STM32.c)(0x5AF48302)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-o .\glcd_spi_stm32.o --omf_browse .\glcd_spi_stm32.crf --depend .\glcd_spi_stm32.d)
+I (C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x_cl.h)(0x532CAA2A)
+I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x532CAE92)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C87C24)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x532CAE92)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x532CAE92)
+I (C:\Keil\ARM\Inc\ST\STM32F10x\system_stm32f10x_cl.h)(0x532CAA2A)
+I (GLCD.h)(0x5AF48302)
+I (Font_6x8_h.h)(0x5AF48302)
+I (Font_16x24_h.h)(0x5AF48302)
+F (.\statemachine.c)(0x5AF4A9EF)(-c --cpu Cortex-M3 -D__RTX -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-o .\statemachine.o --omf_browse .\statemachine.crf --depend .\statemachine.d)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C87C24)
+I (C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x_cl.h)(0x532CAA2A)
+I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x532CAE92)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C87C24)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x532CAE92)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x532CAE92)
+I (C:\Keil\ARM\Inc\ST\STM32F10x\system_stm32f10x_cl.h)(0x532CAA2A)
+I (GLCD.h)(0x5AF48302)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x51C87C24)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C87C24)
