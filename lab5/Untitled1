@@ -1,0 +1,95 @@
+        .data
+
+name:   .asciz  "Victor Yuan"   @move to r7?
+        .equ    i_red, #0
+        .equ    i_green, #1
+        .equ    i_blue, #2
+        .equ    i_size, #3
+        .equ    NULL, #0
+width:  .word   12
+height: .word   10
+
+
+
+
+.global     main
+
+
+
+Ytest:  cmp     r1,r5                  @comparing 0 to height(10)
+        bge     Ycount
+        mov     r0, #0
+
+Ycount:
+        add     r1,r1, #1
+        b       Ytest
+
+@-----------------------------------------------------------------
+Xtest:  cmp     r1,r4
+        bge     Xcount
+        mul     r3,r1,r4
+        add     r3,r3,r0
+        add     r3,r8,r3
+
+        strb    r2, [r3,i_red]
+        strb    r2, [r3,i_green]
+        strb    r2, [r3,i_blue]
+        add     r0, r0, #1              @i++
+        b       Xtest                   @branch to start of Xtest loop
+
+Xcount:  add     r1,r1,#3
+        b       itest
+
+Setrow:   cmp r1,r4
+        bge     count
+        mul     r3,r1,r4
+        add     r3,r3,r0
+        add     r3,r8,r3        @r3 = location of array
+        ldr r2, [7]
+        str r2, [r3,i_red]
+        add r7, #1
+        ldr r2, [7]
+        str r7, [r3,i_green]
+        add r7, #1
+        ldr r2, [7]
+        str r7, [r3,i_blue]
+        add r7, #1
+count:  add     r1,r1,#3
+        b       setN
+else:
+
+main:
+        @load r4,5 with width and height
+        ldr r4, =width
+        ldr r4, [r4]            @r4 = 12
+        ldr r5, =height
+        ldr r5, [r5]            @r5 = 10
+
+        @memory allocation
+        mul r6, r4,r5           @r6 = 120
+        add r0, r6,r6, lsl #1   @r0= 360
+        bl malloc
+        cmp r0, NULL
+        beq else
+        mov r8, r0
+        mov r2, #0              @simple loading value 0 for now
+        mov r1, #0
+
+
+
+        mov     r1, #0
+        ldr     r7, =name
+        bl      Setrow
+
+
+
+
+
+
+
+
+
+
+
+        mov r0,#0
+        mov pc,lr
